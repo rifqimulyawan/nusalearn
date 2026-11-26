@@ -30,6 +30,18 @@ Semua milestone juga bisa dibuka langsung lewat GitHub Pages:
 | `bab-11-selesai/` | + sanitasi & tambalan XSS | [buka](https://rifqimulyawan.github.io/nusalearn/bab-11-selesai/) |
 | `bab-12-selesai/` | + localStorage tema + tahun otomatis | [buka](https://rifqimulyawan.github.io/nusalearn/bab-12-selesai/) |
 
+## Aset & unduhan
+
+Setiap milestone memuat folder `assets/` yang sama: `logo.svg` dan
+`hero.svg`. Unduh langsung:
+
+- [logo.svg](https://rifqimulyawan.github.io/nusalearn/bab-12-selesai/assets/logo.svg)
+- [hero.svg](https://rifqimulyawan.github.io/nusalearn/bab-12-selesai/assets/hero.svg)
+
+Atau unduh **seluruh kode sebagai ZIP**:
+[github.com/rifqimulyawan/nusalearn/archive/refs/heads/main.zip](https://github.com/rifqimulyawan/nusalearn/archive/refs/heads/main.zip)
+(atau tombol **Code → Download ZIP** di halaman repo).
+
 ## ⚠️ Catatan keamanan
 
 **`bab-10-selesai/` sengaja dibiarkan rentan.** Folder itu mereproduksi
