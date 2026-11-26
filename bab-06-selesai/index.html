@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NusaLearn — platform belajar pemrograman web berbahasa Indonesia. Kurikulum terstruktur, mentor praktisi, proyek portofolio, dan sertifikat kelulusan.">
+  <title>NusaLearn — Kuasai Pemrograman Web dari Nol</title>
+
+  <!-- CSS eksternal: satu berkas, bisa di-cache peramban -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== KEPALA & NAVIGASI ===== -->
+  <header class="header-situs">
+    <div class="wadah header-isi">
+      <a class="logo" href="#beranda">
+        <img src="assets/logo.svg" alt="Logo NusaLearn" width="40" height="40">
+        <span>NusaLearn</span>
+      </a>
+      <div class="header-aksi">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+  <span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+  Menu
+</button>
+      </div>
+      <nav class="nav-utama" id="nav-utama">
+        <ul class="daftar-nav">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li class="punya-submenu">
+            <a href="#harga" class="tautan-submenu" aria-haspopup="true" aria-expanded="false">Paket <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="submenu">
+              <li><a href="#harga-pemula">Kelas Pemula</a></li>
+              <li><a href="#harga-pro">Kelas Pro</a></li>
+              <li><a href="#harga-tim">Kelas Tim</a></li>
+            </ul>
+          </li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="tombol tombol-primer" href="#daftar">Daftar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="beranda" class="hero">
+      <div class="wadah hero-isi">
+        <div class="hero-teks">
+          <h1>Kuasai Pemrograman Web, dari Nol sampai Siap Kerja</h1>
+          <p class="lead">NusaLearn adalah platform belajar pemrograman web
+             berbahasa Indonesia dengan kurikulum terstruktur, mentor praktisi,
+             dan proyek nyata untuk portofolio Anda.</p>
+          <p class="hero-aksi">
+            <a class="tombol tombol-primer" href="#daftar">Mulai Belajar</a>
+            <a class="tombol tombol-bayangan" href="#fitur">Lihat Fitur</a>
+          </p>
+          <p id="sapaan" class="sapaan" hidden></p>
+          <ul class="statistik">
+            <li><strong>12.500+</strong> alumni</li>
+            <li><strong>4,9/5</strong> rating peserta</li>
+            <li><strong>120+</strong> video materi</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.svg" alt="Ilustrasi tampilan dashboard kursus NusaLearn"
+               width="640" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FITUR ===== -->
+    <section id="fitur">
+      <div class="wadah">
+        <h2>Kenapa Belajar di NusaLearn?</h2>
+        <p class="subjudul-bagian">Semua yang kamu butuhkan untuk menjadi web developer.</p>
+        <ul class="daftar-fitur" id="daftar-fitur">
+        <li class="kartu"><h3>Kurikulum Terstruktur</h3>
+          <p>Materi disusun bertahap dari HTML, CSS, hingga JavaScript — cocok untuk pemula tanpa latar IT.</p></li>
+        <li class="kartu"><h3>Mentor Praktisi</h3>
+          <p>Dibimbing langsung oleh developer yang aktif bekerja di industri teknologi.</p></li>
+        <li class="kartu"><h3>Proyek Portofolio</h3>
+          <p>Setiap modul ditutup dengan proyek nyata yang bisa dipamerkan ke calon perusahaan.</p></li>
+        <li class="kartu"><h3>Sertifikat Kelulusan</h3>
+          <p>Dapatkan sertifikat terverifikasi setelah menyelesaikan seluruh modul dan ujian akhir.</p></li>
+        <li class="kartu"><h3>Komunitas Aktif</h3>
+          <p>Bergabung dengan 8.000+ member untuk diskusi, code review, dan info lowongan kerja.</p></li>
+        <li class="kartu"><h3>Akses Selamanya</h3>
+          <p>Sekali bayar, akses seluruh materi dan pembaruan kurikulum selamanya.</p></li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- ===== HARGA ===== -->
+    <section id="harga">
+      <div class="wadah">
+        <h2>Pilih Paket Belajarmu</h2>
+        <p class="subjudul-bagian">Harga transparan, tanpa biaya tersembunyi.</p>
+        <div class="daftar-harga" id="daftar-harga">
+        <article class="kartu-harga" id="harga-pemula">
+          <h3>Pemula</h3>
+          <p class="harga-angka">Gratis</p>
+          <ul><li>Modul HTML dasar</li><li>Akses komunitas</li></ul>
+          <a class="tombol tombol-bayangan" href="#daftar">Pilih Pemula</a>
+        </article>
+        <article class="kartu-harga unggulan" id="harga-pro">
+          <span class="lencana">Paling Populer</span>
+          <h3>Pro</h3>
+          <p class="harga-angka">Rp299.000<small> /selamanya</small></p>
+          <ul><li>Semua modul &amp; pembaruan</li><li>Proyek portofolio</li>
+              <li>Sertifikat kelulusan</li><li>Code review mentor</li></ul>
+          <a class="tombol tombol-primer" href="#daftar">Pilih Pro</a>
+        </article>
+        <article class="kartu-harga" id="harga-tim">
+          <h3>Kelas Tim</h3>
+          <p class="harga-angka">Rp999.000<small> /5 orang</small></p>
+          <ul><li>Semua fasilitas Pro</li><li>Untuk 5 anggota tim</li>
+              <li>Sesi mentoring privat</li></ul>
+          <a class="tombol tombol-bayangan" href="#daftar">Pilih Kelas Tim</a>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section id="testimoni">
+      <div class="wadah">
+        <h2>Apa Kata Alumni?</h2>
+        <p class="subjudul-bagian">Cerita nyata dari para lulusan NusaLearn.</p>
+        <div class="daftar-testimoni" id="daftar-testimoni">
+        <blockquote class="kartu-testimoni">
+          <p>"Materinya runtut banget. Saya yang awalnya nggak tahu apa-apa soal coding, sekarang sudah bisa bikin website sendiri."</p>
+          <footer>— Dewi Lestari, Pembaca</footer>
+        </blockquote>
+        <blockquote class="kartu-testimoni">
+          <p>"Proyek portofolio dari NusaLearn jadi andalan saya saat interview. Alhamdulillah langsung diterima kerja."</p>
+          <footer>— Rizky Pratama, Fresh Graduate</footer>
+        </blockquote>
+        <blockquote class="kartu-testimoni">
+          <p>"Sebagai freelancer, sertifikat dan komunitasnya sangat membantu saya mendapat klien pertama."</p>
+          <footer>— Sari Wulandari, Freelancer</footer>
+        </blockquote>
+      </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ: akordeon ===== -->
+    <section id="faq">
+      <div class="wadah">
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <div id="daftar-faq">
+          <article class="faq-item">
+          <h3>Apakah cocok untuk pemula tanpa latar IT?</h3>
+          <p>Sangat cocok. Kurikulum dimulai dari konsep paling dasar dan setiap
+             materi disertai latihan berlangkah.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Bagaimana format belajarnya?</h3>
+          <p>Belajar mandiri lewat video dan modul interaktif, ditambah sesi
+             tanya jawab mingguan bersama mentor.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Apakah ada garansi?</h3>
+          <p>Ada. Paket Pro dan Kelas Tim dilindungi garansi uang kembali 14 hari
+             tanpa syarat.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULIR PENDAFTARAN ===== -->
+    <section id="daftar" class="formulir">
+      <div class="wadah">
+        <h2>Daftar Sekarang</h2>
+        <p class="subjudul-bagian">Isi formulir di bawah ini dan mulai perjalanan belajarmu hari ini.</p>
+
+        <form id="form-daftar" action="#" method="post">
+          <fieldset>
+            <legend>Data Diri</legend>
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="60"
+                   placeholder="cth: Budi Santoso" autocomplete="name">
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" required maxlength="100"
+                   placeholder="cth: budi@email.com" autocomplete="email">
+
+            <label for="whatsapp">Nomor WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required maxlength="15"
+                   pattern="[0-9]{10,13}" placeholder="cth: 081234567890" autocomplete="tel">
+          </fieldset>
+
+          <fieldset>
+            <legend>Pilihan Belajar</legend>
+
+            <label for="paket">Paket Belajar</label>
+            <select id="paket" name="paket" required>
+              <option value="">— Pilih paket —</option>
+              <optgroup label="Gratis">
+                <option value="pemula">Pemula — Gratis</option>
+              </optgroup>
+              <optgroup label="Berbayar">
+                <option value="pro">Pro — Rp299.000</option>
+                <option value="tim">Kelas Tim — Rp999.000</option>
+              </optgroup>
+            </select>
+
+            <p>Jadwal belajar yang diinginkan:</p>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-pagi" name="jadwal" value="pagi" required>
+              <label for="jadwal-pagi">Pagi (08.00–10.00)</label>
+            </div>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-malam" name="jadwal" value="malam">
+              <label for="jadwal-malam">Malam (19.00–21.00)</label>
+            </div>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-weekend" name="jadwal" value="weekend">
+              <label for="jadwal-weekend">Akhir pekan (Sabtu–Minggu)</label>
+            </div>
+
+            <label for="motivasi">Motivasi belajar (opsional)</label>
+            <textarea id="motivasi" name="motivasi" rows="4" maxlength="300"
+                      placeholder="Ceritakan singkat kenapa kamu ingin belajar pemrograman web..."></textarea>
+          </fieldset>
+
+          <div class="grup-radio">
+            <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+            <label for="setuju">Saya menyetujui
+              <a href="#">Syarat &amp; Ketentuan</a> dan
+              <a href="#">Kebijakan Privasi</a> NusaLearn.</label>
+          </div>
+
+          <div class="form-aksi">
+            <button type="submit" class="tombol tombol-primer">Daftar Sekarang</button>
+            <button type="reset" class="tombol tombol-bayangan">Kosongkan</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== KOMENTAR PENGUNJUNG ===== -->
+    <section id="komentar" class="formulir">
+      <div class="wadah">
+        <h2>Komentar Pengunjung</h2>
+        <p class="subjudul-bagian">Tinggalkan kesan atau pertanyaan — tampil langsung di halaman ini.</p>
+
+        <form id="form-komentar">
+          <label for="komentar-nama">Nama</label>
+          <input type="text" id="komentar-nama" name="nama" required maxlength="60"
+                 placeholder="cth: Budi Santoso">
+
+          <label for="komentar-pesan">Komentar</label>
+          <textarea id="komentar-pesan" name="pesan" rows="3" required maxlength="300"
+                    placeholder="Tulis komentar Anda..."></textarea>
+
+          <div class="form-aksi">
+            <button type="submit" class="tombol tombol-primer">Kirim Komentar</button>
+          </div>
+        </form>
+
+        <div id="daftar-komentar" class="daftar-komentar" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== KAKI ===== -->
+  <footer class="footer-situs">
+    <div class="wadah">
+      <div class="footer-kolom">
+        <section>
+          <h3>Produk</h3>
+          <ul>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Bantuan</h3>
+          <ul>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat &amp; Ketentuan</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Tentang</h3>
+          <ul>
+            <li><a href="#">Cerita Kami</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Karier</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="hak-cipta">&copy; 2026 NusaLearn. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+<script>
+
+/* ==========================================================
+   TUGAS 6 — Dasar-Dasar JavaScript
+   Kalkulator biaya pendaftaran NusaLearn.
+   Buka DevTools (F12) → tab Console untuk melihat hasilnya.
+   ========================================================== */
+
+// --- Variabel dan tipe data ---
+const namaProgram = "NusaLearn";          // string
+const tahunBerdiri = 2026;                // number
+const sedangPromo = true;                 // boolean
+let jumlahPendaftar = 0;                  // nilai bisa berubah
+
+console.log(`Selamat datang di ${namaProgram} (${tahunBerdiri}).`);
+console.log("Tipe data namaProgram :", typeof namaProgram);
+console.log("Tipe data sedangPromo :", typeof sedangPromo);
+
+// --- Harga paket (number) ---
+const hargaPemula = 0;
+const hargaPro = 299000;
+const hargaTim = 999000;
+
+// --- Operator aritmetika & perbandingan ---
+const jumlahAnggotaTim = 5;
+const hargaPerOrang = hargaTim / jumlahAnggotaTim;
+console.log(`Harga Kelas Tim per orang: Rp${hargaPerOrang}`);
+console.log(`Apakah Pro lebih murah dari Tim? ${hargaPro < hargaTim}`);
+console.log(`Apakah Pemula gratis? ${hargaPemula === 0}`);
+
+// --- Percabangan: diskon bertingkat ---
+const paketDipilih = "pro";
+let diskon = 0;
+
+if (paketDipilih === "pro" && sedangPromo) {
+  diskon = 0.2;            // diskon 20% saat promo
+} else if (paketDipilih === "tim") {
+  diskon = 0.1;            // diskon 10% untuk kelas tim
+} else {
+  diskon = 0;
+}
+
+const hargaNormal = paketDipilih === "pro" ? hargaPro
+                  : paketDipilih === "tim" ? hargaTim
+                  : hargaPemula;
+const totalBayar = hargaNormal - (hargaNormal * diskon);
+
+console.log(`Paket dipilih : ${paketDipilih}`);
+console.log(`Diskon        : ${diskon * 100}%`);
+console.log(`Total bayar   : Rp${totalBayar}`);
+
+// --- Perulangan: simulasi 5 pendaftar baru ---
+for (let i = 1; i <= 5; i++) {
+  jumlahPendaftar++;
+  console.log(`Pendaftar ke-${i} berhasil masuk. Total: ${jumlahPendaftar}`);
+}
+
+// --- Operator logika & ternary ---
+const statusKuota = jumlahPendaftar >= 5 ? "Kuota penuh" : "Masih tersedia";
+console.log(`Status kuota  : ${statusKuota}`);
+
+</script>
+
+</body>
+</html>
+

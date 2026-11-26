@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8">
+<title>Cek Form — Bab II</title>
+<style>
+  body { font-family:'Segoe UI',Arial,sans-serif; background:#eff6ff;
+    margin:0; padding:24px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px;
+    max-width:1100px; margin:0 auto; }
+  .panel { background:#fff; border:1px solid #e7e5e4; border-radius:10px;
+    padding:18px 22px; }
+  .panel h3 { margin:0 0 12px; font-size:15px; color:#57534e; }
+  label { display:block; font-weight:600; font-size:13px;
+    margin:12px 0 4px; }
+  input, select, textarea { width:100%; box-sizing:border-box;
+    padding:9px 10px; border:1.5px solid #d6d3d1; border-radius:7px;
+    font-size:14px; }
+  /* visualisasi keadaan validasi BAWAAN peramban */
+  input:invalid, select:invalid { border-color:#dc2626;
+    background:#fef2f2; }
+  input:valid, select:valid { border-color:#16a34a; }
+  button { margin-top:14px; padding:9px 18px; border:0; border-radius:8px;
+    background:#1d4ed8; color:#fff; font-weight:600; cursor:pointer; }
+  .ket { font-size:12px; color:#a8a29e; margin-top:10px; }
+</style></head><body>
+<div class="grid">
+  <div class="panel"><h3>A — form kosong: field required cocok :invalid</h3>
+    <form action="#" method="post">
+      <label for="n1">Nama Lengkap</label>
+      <input id="n1" type="text" required placeholder="cth: Dewi Lestari">
+      <label for="e1">Email</label>
+      <input id="e1" type="email" required placeholder="nama@email.com">
+      <label for="p1">Paket Belajar</label>
+      <select id="p1" required><option value="">— pilih paket —</option>
+        <option>Pemula (Gratis)</option><option>Pro</option></select>
+      <button type="submit">Kirim</button>
+      <div class="ket">merah = :invalid (required kosong)</div>
+    </form></div>
+  <div class="panel"><h3>B — terisi benar: cocok :valid</h3>
+    <form action="#" method="post">
+      <label for="n2">Nama Lengkap</label>
+      <input id="n2" type="text" required value="Dewi Lestari">
+      <label for="e2">Email</label>
+      <input id="e2" type="email" required value="dewi@email.com">
+      <label for="p2">Paket Belajar</label>
+      <select id="p2" required><option value="">— pilih paket —</option>
+        <option selected>Pemula (Gratis)</option><option>Pro</option></select>
+      <button type="submit">Kirim</button>
+      <div class="ket">hijau = :valid — validasi bawaan, nol JavaScript</div>
+    </form></div>
+</div>
+</body></html>

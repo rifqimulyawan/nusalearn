@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NusaLearn — platform belajar pemrograman web berbahasa Indonesia. Kurikulum terstruktur, mentor praktisi, proyek portofolio, dan sertifikat kelulusan.">
+  <title>NusaLearn — Kuasai Pemrograman Web dari Nol</title>
+
+  <!-- CSS eksternal: satu berkas, bisa di-cache peramban -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== KEPALA & NAVIGASI ===== -->
+  <header class="header-situs">
+    <div class="wadah header-isi">
+      <a class="logo" href="#beranda">
+        <img src="assets/logo.svg" alt="Logo NusaLearn" width="40" height="40">
+        <span>NusaLearn</span>
+      </a>
+      <div class="header-aksi">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+  <span class="nav-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+  Menu
+</button>
+      </div>
+      <nav class="nav-utama" id="nav-utama">
+        <ul class="daftar-nav">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li class="punya-submenu">
+            <a href="#harga" class="tautan-submenu" aria-haspopup="true" aria-expanded="false">Paket <span class="caret" aria-hidden="true">&#9662;</span></a>
+            <ul class="submenu">
+              <li><a href="#harga-pemula">Kelas Pemula</a></li>
+              <li><a href="#harga-pro">Kelas Pro</a></li>
+              <li><a href="#harga-tim">Kelas Tim</a></li>
+            </ul>
+          </li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><button id="tombol-tema" class="tombol-tema" aria-label="Ganti tema gelap/terang">🌙 Tema</button></li>
+          <li><a class="tombol tombol-primer" href="#daftar">Daftar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="beranda" class="hero">
+      <div class="wadah hero-isi">
+        <div class="hero-teks">
+          <h1>Kuasai Pemrograman Web, dari Nol sampai Siap Kerja</h1>
+          <p class="lead">NusaLearn adalah platform belajar pemrograman web
+             berbahasa Indonesia dengan kurikulum terstruktur, mentor praktisi,
+             dan proyek nyata untuk portofolio Anda.</p>
+          <p class="hero-aksi">
+            <a class="tombol tombol-primer" href="#daftar">Mulai Belajar</a>
+            <a class="tombol tombol-bayangan" href="#fitur">Lihat Fitur</a>
+          </p>
+          <p id="sapaan" class="sapaan" hidden></p>
+          <ul class="statistik">
+            <li><strong>12.500+</strong> alumni</li>
+            <li><strong>4,9/5</strong> rating peserta</li>
+            <li><strong>120+</strong> video materi</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.svg" alt="Ilustrasi tampilan dashboard kursus NusaLearn"
+               width="640" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FITUR ===== -->
+    <section id="fitur">
+      <div class="wadah">
+        <h2>Kenapa Belajar di NusaLearn?</h2>
+        <p class="subjudul-bagian">Semua yang kamu butuhkan untuk menjadi web developer.</p>
+        <ul class="daftar-fitur" id="daftar-fitur"></ul>
+      </div>
+    </section>
+
+    <!-- ===== HARGA ===== -->
+    <section id="harga">
+      <div class="wadah">
+        <h2>Pilih Paket Belajarmu</h2>
+        <p class="subjudul-bagian">Harga transparan, tanpa biaya tersembunyi.</p>
+        <div class="daftar-harga" id="daftar-harga"></div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONI ===== -->
+    <section id="testimoni">
+      <div class="wadah">
+        <h2>Apa Kata Alumni?</h2>
+        <p class="subjudul-bagian">Cerita nyata dari para lulusan NusaLearn.</p>
+        <div class="daftar-testimoni" id="daftar-testimoni"></div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ: akordeon ===== -->
+    <section id="faq">
+      <div class="wadah">
+        <h2>Pertanyaan yang Sering Diajukan</h2>
+        <div id="daftar-faq">
+          <article class="faq-item">
+            <button class="faq-tanya" aria-expanded="false">
+              Apakah cocok untuk pemula tanpa latar IT?
+              <span class="faq-ikon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-jawab">
+              <p>Sangat cocok. Kurikulum dimulai dari konsep paling dasar dan
+                 setiap materi disertai latihan berlangkah.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-tanya" aria-expanded="false">
+              Bagaimana format belajarnya?
+              <span class="faq-ikon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-jawab">
+              <p>Belajar mandiri lewat video dan modul interaktif, ditambah
+                 sesi tanya jawab mingguan bersama mentor.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-tanya" aria-expanded="false">
+              Apakah ada garansi?
+              <span class="faq-ikon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-jawab">
+              <p>Ada. Paket Pro dan Kelas Tim dilindungi garansi uang kembali
+                 14 hari tanpa syarat.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULIR PENDAFTARAN ===== -->
+    <section id="daftar" class="formulir">
+      <div class="wadah">
+        <h2>Daftar Sekarang</h2>
+        <p class="subjudul-bagian">Isi formulir di bawah ini dan mulai perjalanan belajarmu hari ini.</p>
+
+        <form id="form-daftar" action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Data Diri</legend>
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="60"
+                   placeholder="cth: Budi Santoso" autocomplete="name">
+            <span class="pesan-error" id="error-nama"></span>
+
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" required maxlength="100"
+                   placeholder="cth: budi@email.com" autocomplete="email">
+            <span class="pesan-error" id="error-email"></span>
+
+            <label for="whatsapp">Nomor WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required maxlength="15"
+                   pattern="[0-9]{10,13}" placeholder="cth: 081234567890" autocomplete="tel">
+            <span class="pesan-error" id="error-whatsapp"></span>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pilihan Belajar</legend>
+
+            <label for="paket">Paket Belajar</label>
+            <select id="paket" name="paket" required>
+              <option value="">— Pilih paket —</option>
+              <optgroup label="Gratis">
+                <option value="pemula">Pemula — Gratis</option>
+              </optgroup>
+              <optgroup label="Berbayar">
+                <option value="pro">Pro — Rp299.000</option>
+                <option value="tim">Kelas Tim — Rp999.000</option>
+              </optgroup>
+            </select>
+            <span class="pesan-error" id="error-paket"></span>
+
+            <p>Jadwal belajar yang diinginkan:</p>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-pagi" name="jadwal" value="pagi" required>
+              <label for="jadwal-pagi">Pagi (08.00–10.00)</label>
+            </div>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-malam" name="jadwal" value="malam">
+              <label for="jadwal-malam">Malam (19.00–21.00)</label>
+            </div>
+            <div class="grup-radio">
+              <input type="radio" id="jadwal-weekend" name="jadwal" value="weekend">
+              <label for="jadwal-weekend">Akhir pekan (Sabtu–Minggu)</label>
+            </div>
+            <span class="pesan-error" id="error-jadwal"></span>
+
+            <label for="motivasi">Motivasi belajar (opsional)</label>
+            <textarea id="motivasi" name="motivasi" rows="4" maxlength="300"
+                      placeholder="Ceritakan singkat kenapa kamu ingin belajar pemrograman web..."></textarea>
+          </fieldset>
+
+          <p class="ringkasan" id="ringkasan-paket" hidden></p>
+
+          <div class="grup-radio">
+            <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+            <label for="setuju">Saya menyetujui
+              <a href="#">Syarat &amp; Ketentuan</a> dan
+              <a href="#">Kebijakan Privasi</a> NusaLearn.</label>
+          </div>
+          <span class="pesan-error" id="error-setuju"></span>
+
+          <div class="form-aksi">
+            <button type="submit" class="tombol tombol-primer">Daftar Sekarang</button>
+            <button type="reset" class="tombol tombol-bayangan">Kosongkan</button>
+          </div>
+
+          <p class="pesan-sukses" id="pesan-sukses" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== KOMENTAR PENGUNJUNG ===== -->
+    <section id="komentar" class="formulir">
+      <div class="wadah">
+        <h2>Komentar Pengunjung</h2>
+        <p class="subjudul-bagian">Tinggalkan kesan atau pertanyaan — tampil langsung di halaman ini.</p>
+
+        <form id="form-komentar" novalidate>
+          <label for="komentar-nama">Nama</label>
+          <input type="text" id="komentar-nama" name="nama" required maxlength="60"
+                 placeholder="cth: Budi Santoso">
+
+          <label for="komentar-pesan">Komentar</label>
+          <textarea id="komentar-pesan" name="pesan" rows="3" required maxlength="300"
+                    placeholder="Tulis komentar Anda..."></textarea>
+
+          <div class="form-aksi">
+            <button type="submit" class="tombol tombol-primer">Kirim Komentar</button>
+          </div>
+        </form>
+
+        <div id="daftar-komentar" class="daftar-komentar" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== KAKI ===== -->
+  <footer class="footer-situs">
+    <div class="wadah">
+      <div class="footer-kolom">
+        <section>
+          <h3>Produk</h3>
+          <ul>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Bantuan</h3>
+          <ul>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat &amp; Ketentuan</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Tentang</h3>
+          <ul>
+            <li><a href="#">Cerita Kami</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Karier</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="hak-cipta">&copy; 2026 NusaLearn. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+<script>
+
+/* ==========================================================
+   TUGAS 9 — Event Handling
+   Semua interaksi halaman dikendalikan lewat addEventListener:
+   menu mobile, akordeon FAQ, validasi formulir langsung,
+   ringkasan harga otomatis, dan toggle tema.
+   ========================================================== */
+
+// ====== DATA & RENDER (dari Proyek 8) ======
+const daftarFitur = [
+  { judul: "Kurikulum Terstruktur", deskripsi: "Materi disusun bertahap dari HTML, CSS, hingga JavaScript — cocok untuk pemula tanpa latar IT." },
+  { judul: "Mentor Praktisi",       deskripsi: "Dibimbing langsung oleh developer yang aktif bekerja di industri teknologi." },
+  { judul: "Proyek Portofolio",     deskripsi: "Setiap modul ditutup dengan proyek nyata yang bisa dipamerkan ke calon perusahaan." },
+  { judul: "Sertifikat Kelulusan",  deskripsi: "Dapatkan sertifikat terverifikasi setelah menyelesaikan seluruh modul dan ujian akhir." },
+  { judul: "Komunitas Aktif",       deskripsi: "Bergabung dengan 8.000+ member untuk diskusi, code review, dan info lowongan kerja." },
+  { judul: "Akses Selamanya",       deskripsi: "Sekali bayar, akses seluruh materi dan pembaruan kurikulum selamanya." }
+];
+
+const daftarPaket = [
+  { id: "pemula", nama: "Pemula",    harga: 0,      label: "Gratis",    catatan: "",           unggulan: false, fasilitas: ["Modul HTML dasar", "Akses komunitas"] },
+  { id: "pro",    nama: "Pro",       harga: 299000, label: "Rp299.000", catatan: "/selamanya", unggulan: true,  fasilitas: ["Semua modul & pembaruan", "Proyek portofolio", "Sertifikat kelulusan", "Code review mentor"] },
+  { id: "tim",    nama: "Kelas Tim", harga: 999000, label: "Rp999.000", catatan: "/5 orang",   unggulan: false, fasilitas: ["Semua fasilitas Pro", "Untuk 5 anggota tim", "Sesi mentoring privat"] }
+];
+
+const daftarTestimoni = [
+  { nama: "Dewi Lestari",   peran: "Pembaca",      kutipan: "Materinya runtut banget. Saya yang awalnya nggak tahu apa-apa soal coding, sekarang sudah bisa bikin website sendiri." },
+  { nama: "Rizky Pratama",  peran: "Fresh Graduate", kutipan: "Proyek portofolio dari NusaLearn jadi andalan saya saat interview. Alhamdulillah langsung diterima kerja." },
+  { nama: "Sari Wulandari", peran: "Freelancer",     kutipan: "Sebagai freelancer, sertifikat dan komunitasnya sangat membantu saya mendapat klien pertama." }
+];
+
+function formatRupiah(angka) {
+  if (angka === 0) return "Gratis";
+  return "Rp" + angka.toLocaleString("id-ID");
+}
+
+const wadahFitur = document.getElementById("daftar-fitur");
+daftarFitur.forEach((fitur) => {
+  const li = document.createElement("li");
+  li.className = "kartu";
+  const h3 = document.createElement("h3");
+  h3.textContent = fitur.judul;
+  const p = document.createElement("p");
+  p.textContent = fitur.deskripsi;
+  li.append(h3, p);
+  wadahFitur.append(li);
+});
+
+const wadahHarga = document.getElementById("daftar-harga");
+daftarPaket.forEach((paket) => {
+  const kartu = document.createElement("article");
+  kartu.className = paket.unggulan ? "kartu-harga unggulan" : "kartu-harga";
+  kartu.id = "harga-" + paket.id;
+  if (paket.unggulan) {
+    const lencana = document.createElement("span");
+    lencana.className = "lencana";
+    lencana.textContent = "Paling Populer";
+    kartu.append(lencana);
+  }
+  const h3 = document.createElement("h3");
+  h3.textContent = paket.nama;
+  const harga = document.createElement("p");
+  harga.className = "harga-angka";
+  harga.textContent = paket.label;
+  if (paket.catatan) {
+    const kecil = document.createElement("small");
+    kecil.textContent = " " + paket.catatan;
+    harga.append(kecil);
+  }
+  const ul = document.createElement("ul");
+  paket.fasilitas.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    ul.append(li);
+  });
+  const tombol = document.createElement("a");
+  tombol.className = paket.unggulan ? "tombol tombol-primer" : "tombol tombol-bayangan";
+  tombol.href = "#daftar";
+  tombol.textContent = "Pilih " + paket.nama;
+  // Klik kartu harga → otomatis pilih paket di formulir
+  tombol.addEventListener("click", () => {
+    selectPaket.value = paket.id;
+    selectPaket.dispatchEvent(new Event("change"));
+  });
+  kartu.append(h3, harga, ul, tombol);
+  wadahHarga.append(kartu);
+});
+
+const wadahTestimoni = document.getElementById("daftar-testimoni");
+daftarTestimoni.forEach((t) => {
+  const blok = document.createElement("blockquote");
+  blok.className = "kartu-testimoni";
+  const p = document.createElement("p");
+  p.textContent = `"${t.kutipan}"`;
+  const footer = document.createElement("footer");
+  footer.textContent = `— ${t.nama}, ${t.peran}`;
+  blok.append(p, footer);
+  wadahTestimoni.append(blok);
+});
+
+// ====== EVENT: menu mobile ======
+const navToggle = document.getElementById("nav-toggle");
+const navUtama = document.getElementById("nav-utama");
+navToggle.addEventListener("click", () => {
+  const terbuka = navUtama.classList.toggle("terbuka");
+  navToggle.setAttribute("aria-expanded", terbuka);
+});
+// Tutup menu setelah salah satu tautan diklik
+navUtama.addEventListener("click", (e) => {
+  const tautan = e.target.closest("a");
+  if (!tautan) return;
+  // Klik tautan induk "Paket" = buka/tutup submenu, bukan navigasi
+  if (tautan.classList.contains("tautan-submenu")) {
+    e.preventDefault();
+    const item = tautan.closest(".punya-submenu");
+    const terbuka = item.classList.toggle("terbuka");
+    tautan.setAttribute("aria-expanded", terbuka);
+    return;
+  }
+  navUtama.classList.remove("terbuka");
+  navToggle.setAttribute("aria-expanded", "false");
+});
+
+// ====== EVENT: akordeon FAQ ======
+document.querySelectorAll(".faq-tanya").forEach((tombol) => {
+  tombol.addEventListener("click", () => {
+    const item = tombol.closest(".faq-item");
+    const sedangTerbuka = item.classList.contains("terbuka");
+    // Tutup semua item lain (akordeon satu-terbuka)
+    document.querySelectorAll(".faq-item").forEach((el) => {
+      el.classList.remove("terbuka");
+      el.querySelector(".faq-tanya").setAttribute("aria-expanded", "false");
+    });
+    if (!sedangTerbuka) {
+      item.classList.add("terbuka");
+      tombol.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+// ====== EVENT: validasi formulir ======
+const form = document.getElementById("form-daftar");
+const inputNama = document.getElementById("nama");
+const inputEmail = document.getElementById("email");
+const inputWa = document.getElementById("whatsapp");
+const selectPaket = document.getElementById("paket");
+const cekSetuju = document.getElementById("setuju");
+const ringkasan = document.getElementById("ringkasan-paket");
+const pesanSukses = document.getElementById("pesan-sukses");
+
+function setError(input, idError, pesan) {
+  const el = document.getElementById(idError);
+  el.textContent = pesan;
+  input.classList.toggle("input-error", pesan !== "");
+  input.classList.toggle("input-valid", pesan === "");
+}
+
+function validasiNama() {
+  const v = inputNama.value.trim();
+  if (v.length < 3) { setError(inputNama, "error-nama", "Nama minimal 3 karakter."); return false; }
+  setError(inputNama, "error-nama", "");
+  return true;
+}
+function validasiEmail() {
+  const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputEmail.value.trim());
+  setError(inputEmail, "error-email", ok ? "" : "Format email tidak valid.");
+  return ok;
+}
+function validasiWa() {
+  const ok = /^[0-9]{10,13}$/.test(inputWa.value.trim());
+  setError(inputWa, "error-whatsapp", ok ? "" : "Nomor WhatsApp harus 10–13 digit angka.");
+  return ok;
+}
+
+// Validasi langsung saat pengguna mengetik / berpindah field
+inputNama.addEventListener("input", validasiNama);
+inputEmail.addEventListener("input", validasiEmail);
+inputWa.addEventListener("input", validasiWa);
+
+// ====== EVENT: ringkasan harga saat paket dipilih ======
+selectPaket.addEventListener("change", () => {
+  const paket = daftarPaket.find((p) => p.id === selectPaket.value);
+  if (!paket) {
+    ringkasan.hidden = true;
+    setError(selectPaket, "error-paket", "Silakan pilih paket belajar.");
+    return;
+  }
+  setError(selectPaket, "error-paket", "");
+  ringkasan.hidden = false;
+  ringkasan.innerHTML = "";
+  const teks = document.createElement("span");
+  teks.innerHTML = `Paket dipilih: <strong>${paket.nama}</strong> — total ` +
+                   `<strong>${formatRupiah(paket.harga)}</strong>`;
+  ringkasan.append(teks);
+});
+
+// ====== EVENT: submit formulir ======
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  pesanSukses.classList.remove("tampil");
+
+  const okNama = validasiNama();
+  const okEmail = validasiEmail();
+  const okWa = validasiWa();
+  const okPaket = selectPaket.value !== "";
+  setError(selectPaket, "error-paket", okPaket ? "" : "Silakan pilih paket belajar.");
+
+  const jadwal = form.querySelector("input[name='jadwal']:checked");
+  document.getElementById("error-jadwal").textContent =
+    jadwal ? "" : "Pilih salah satu jadwal belajar.";
+
+  document.getElementById("error-setuju").textContent =
+    cekSetuju.checked ? "" : "Anda wajib menyetujui Syarat & Ketentuan.";
+
+  if (okNama && okEmail && okWa && okPaket && jadwal && cekSetuju.checked) {
+    const paket = daftarPaket.find((p) => p.id === selectPaket.value);
+    pesanSukses.textContent =
+      `Terima kasih, ${inputNama.value.trim()}! Pendaftaran paket ` +
+      `${paket.nama} berhasil diterima. Info selanjutnya dikirim ke ` +
+      `${inputEmail.value.trim()}.`;
+    pesanSukses.classList.add("tampil");
+    form.reset();
+    ringkasan.hidden = true;
+    document.querySelectorAll(".input-valid").forEach((el) => el.classList.remove("input-valid"));
+  }
+});
+
+// ====== EVENT: keyboard — Enter pada kolom terakhir ======
+document.getElementById("motivasi").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+    form.requestSubmit();
+  }
+});
+
+// ====== EVENT: toggle tema ======
+const tombolTema = document.getElementById("tombol-tema");
+tombolTema.addEventListener("click", () => {
+  document.body.classList.toggle("tema-gelap");
+  const gelap = document.body.classList.contains("tema-gelap");
+  tombolTema.textContent = gelap ? "☀️" : "🌙";
+  tombolTema.setAttribute("aria-label",
+    gelap ? "Ganti ke tema terang" : "Ganti ke tema gelap");
+});
+
+</script>
+
+</body>
+</html>
+
