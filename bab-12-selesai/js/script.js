@@ -1,4 +1,11 @@
-// script.js — render DOM + penangan event NusaLearn (data dari data.js)
+/*
+   script.js — NusaLearn Landing Page (Proyek 12: Mini Project)
+   Versi final: menggabungkan seluruh materi Bab 1–11.
+   - Konten dirender dari data.js lewat DOM API + textContent
+   - Interaksi: menu mobile, akordeon FAQ, validasi formulir,
+     ringkasan harga, toggle tema (tersimpan di localStorage)
+   - Keamanan: sanitasi masukan, tanpa innerHTML untuk data luar
+*/
 /* ==========================================================
    TUGAS 9 — Event Handling
    Semua interaksi halaman dikendalikan lewat addEventListener:

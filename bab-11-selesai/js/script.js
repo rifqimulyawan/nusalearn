@@ -1,4 +1,13 @@
-// script.js — render DOM + penangan event NusaLearn (data dari data.js)
+/*
+   script.js — Logika landing page NusaLearn (Proyek 11: Keamanan)
+   Prinsip utama bab ini:
+   1. SEMUA konten dirender lewat textContent — bukan innerHTML —
+      sehingga markup berbahaya tampil sebagai teks polos.
+   2. Masukan pengguna dibersihkan (sanitasiTeks) sebelum diproses
+      atau ditampilkan kembali.
+   3. Validasi di sisi klien tetap dilakukan, namun dianggap hanya
+      lapisan pertama — validasi sebenarnya wajib ada di server.
+*/
 /* ==========================================================
    TUGAS 9 — Event Handling
    Semua interaksi halaman dikendalikan lewat addEventListener:
