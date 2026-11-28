@@ -280,6 +280,9 @@ main > section { padding: 3rem 0; }
 .lead { font-size: 1.1rem; color: var(--teks-redup); margin: 0 0 1.5rem; }
 .subjudul-bagian { color: var(--teks-redup); margin: 0 0 2rem; }
 
+/* Aksi header (tombol Menu) terdorong ke ujung kanan */
+.header-aksi { margin-left: auto; }
+
 /* Tombol hamburger — hanya tampil di layar kecil */
 .nav-toggle {
   display: inline-flex;
